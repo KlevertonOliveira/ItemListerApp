@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src='script.js'></script>
+  <title>JavaScript DOM Course</title>
+</head>
+<body>
+  <header>
+    <div class="container flex-wrapper">
+      <h1 id='title'>Item Lister</h1>
+      <input type="text" name="filter" id="filter" placeholder="Search items">
+    </div>
+  </header>
+  <main>
+    <div class="container main-container">
+      <section id='formSection'>
+        <h2 id='subheading'>Add Items</h2>
+        <form>
+          <input type="text" required name="itemInput" id="itemInput" placeholder='Add item'>
+          <input type="submit" value='Submit' class='btn' id='submit'/>
+        </form>
+      </section>
+      <section id='contentSection'>
+        <h2>Items</h2>
+        <ul id='items'>
+          <li class="list-item">
+            <span>Item 1</span>
+            <button class='btn remove'>Remove</button>
+          </li>
+          <li class="list-item">
+            <span>Item 2</span>
+            <button class='btn remove'>Remove</button>
+          </li>
+          <li class="list-item">
+            <span>Item 3</span>
+            <button class='btn remove'>Remove</button>
+          </li>
+          <li class="list-item">
+            <span>Item 4</span>
+            <button class='btn remove'>Remove</button>
+          </li>
+        </ul>
+        <button class='btn clear'>Clear All</button>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
